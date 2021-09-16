@@ -1,10 +1,12 @@
 
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
-import 'package:taskapp/createtask.dart';
+import 'package:taskapp/HomePage.dart';
 import 'package:taskapp/login.dart';
 
+import 'DetailsPage.dart';
 import 'Home.dart';
+
 
 void main() {
   runApp(DevicePreview(
@@ -17,9 +19,9 @@ class StartingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-    locale: DevicePreview.locale(context),
-      builder: DevicePreview.appBuilder,
-      home: LoginPage(),
+    // locale: DevicePreview.locale(context),
+    //   builder: DevicePreview.appBuilder,
+      home: DetailsPage(),
 
     );
 

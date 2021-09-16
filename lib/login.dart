@@ -29,6 +29,7 @@ return  ScreenUtilInit(
         decoration: InputDecoration(
             prefixIcon:Icon(Icons.person),
           hintText: "Email id",
+
         ),
       ),
     ),
@@ -38,7 +39,7 @@ return  ScreenUtilInit(
         textAlign: TextAlign.start,
         decoration: InputDecoration(
           prefixIcon:Icon(Icons.lock_open) ,
-          contentPadding: EdgeInsets.only(bottom: 12.5.h),
+
           // icon: Icon(Icons.person),
           hintText: "Password",
         ),
