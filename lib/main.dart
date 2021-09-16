@@ -21,7 +21,7 @@ class StartingPage extends StatelessWidget {
     return MaterialApp(
     // locale: DevicePreview.locale(context),
     //   builder: DevicePreview.appBuilder,
-      home: DetailsPage(),
+      home: HomePage(),
 
     );
 

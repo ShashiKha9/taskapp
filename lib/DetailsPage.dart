@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -112,10 +113,6 @@ class DetailsPage extends StatelessWidget {
 
                       ),
 
-                      
-
-
-
                     ),
                     
 
@@ -138,13 +135,7 @@ class DetailsPage extends StatelessWidget {
                  child: TextField(
 
                     decoration: InputDecoration(
-                      border: InputBorder.none
-
-                    ),
-
-
-
-
+                      border: InputBorder.none,
 
                   ),
 
@@ -156,13 +147,50 @@ class DetailsPage extends StatelessWidget {
 
                   ),
 
+                  ),
+                  ),
+                  SizedBox(
+                    height: 23.h,
                   ),
                   Column(
                     children: [
-                      ListTile(
+                      Padding(padding: EdgeInsets.symmetric(horizontal: 30.w),
+                    child: Container(
+                      height: 101.h,
+                    child:  Card(
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(10.r)
+                          ),
+                          color: Color(0xffB2B9F1),
+                   child:   ListTile(
                         title: Text("Date Time"),
                         subtitle: Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies nisl hac adipiscing consequat, urna di g"),
                       )
+                      ),
+                      ),
+                      ),
+                    ],
+                  ),
+                  SizedBox(
+                    height: 23.h,
+                  ),
+                  Column(
+                    children: [
+                      Padding(padding: EdgeInsets.symmetric(horizontal: 30.w),
+                        child: Container(
+                          height: 101.h,
+                          child:  Card(
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(10.r)
+                              ),
+                              color: Color(0xffB2B9F1),
+                              child:   ListTile(
+                                title: Text("Date Time"),
+                                subtitle: Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies nisl hac adipiscing consequat, urna di g"),
+                              )
+                          ),
+                        ),
+                      ),
                     ],
                   )
 
