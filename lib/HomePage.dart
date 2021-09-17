@@ -52,7 +52,8 @@ class HomePage extends StatelessWidget{
 
           Padding(padding: EdgeInsets.symmetric(horizontal: 40.w,),
             child:Container(
-              height: 154.h,
+              height: MediaQuery.of(context).size.height*0.25,
+              width: MediaQuery.of(context).size.width*2,
               child:  Card(
                 color: Color(0xffB2B9F1),
                 shape: RoundedRectangleBorder(
@@ -97,9 +98,9 @@ class HomePage extends StatelessWidget{
                           ),
 
                       Positioned(
-                          top: 109.0,
-                          left: 38.0,
-                          bottom: 16.0,
+                          top: MediaQuery.of(context).size.height/0.4,
+                          left: MediaQuery.of(context).size.width/0.4,
+                          bottom: MediaQuery.of(context).size.height/0.4,
 
                           child: Row(
                             children: [

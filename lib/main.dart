@@ -6,6 +6,7 @@ import 'package:taskapp/login.dart';
 
 import 'DetailsPage.dart';
 import 'Home.dart';
+import 'historypage.dart';
 
 
 void main() {
@@ -21,7 +22,7 @@ class StartingPage extends StatelessWidget {
     return MaterialApp(
     // locale: DevicePreview.locale(context),
     //   builder: DevicePreview.appBuilder,
-      home: HomePage(),
+      home: DetailsPage(),
 
     );
 
