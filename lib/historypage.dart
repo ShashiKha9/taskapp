@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class HistoryPage extends StatelessWidget{
+  static const routeName = '/HistoryPage';
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -2,8 +2,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:taskapp/DetailsPage.dart';
 
 class HomePage extends StatelessWidget{
+  static const routeName = '/HomePage';
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
@@ -74,6 +76,7 @@ class HomePage extends StatelessWidget{
                         left: 241.72,
                         child:
                         IconButton(onPressed: (){
+                          Navigator.pushNamed(context, DetailsPage.routeName);
 
                         }, icon:Icon(Icons.arrow_forward)),
                       ),
@@ -168,6 +171,8 @@ class HomePage extends StatelessWidget{
                         left: 241.72,
                         child:
                         IconButton(onPressed: (){
+                          Navigator.pushNamed(context, DetailsPage.routeName);
+
 
                         }, icon:Icon(Icons.arrow_forward)),
                       ),

@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:taskapp/createtask.dart';
 class LoginPage extends StatelessWidget{
+  static const routeName = '/LoginPage';
+
   @override
   Widget build(BuildContext context) {
 return  ScreenUtilInit(
@@ -57,6 +60,8 @@ return  ScreenUtilInit(
             borderRadius: BorderRadius.circular(30.r)
           ),
           onPressed: (){
+            Navigator.pushNamed(context, CreateTask.routeName);
+
           },
           child: Text("Login",style: GoogleFonts.poppins(
             textStyle:  TextStyle(color: Colors.white,fontSize: 25.sp,fontWeight: FontWeight.w500)

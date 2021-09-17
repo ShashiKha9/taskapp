@@ -4,10 +4,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:taskapp/historypage.dart';
 
-import 'Dialog/CustomDialog.dart';
 
 class DetailsPage extends StatelessWidget {
+  static const routeName = '/DetailsPage';
+
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
@@ -27,9 +29,10 @@ class DetailsPage extends StatelessWidget {
                   ),
                   SizedBox(
                     height: 16.h,),
-                  Padding(padding: EdgeInsets.symmetric(horizontal: 30.w,),
+                  Padding(padding: EdgeInsets.symmetric(horizontal: 28.w,),
                 child:Container(
-                  height: 188.h,
+                  height: MediaQuery.of(context).size.height*0.3,
+                width:MediaQuery.of(context).size.width*3 ,
                 child:  Card(
                   color: Color(0xffB2B9F1),
                     shape: RoundedRectangleBorder(
@@ -117,21 +120,17 @@ class DetailsPage extends StatelessWidget {
                                                               children: [
                                                                 RaisedButton(
                                                                   onPressed: (){
+                                                                    Navigator.pushNamed(context, HistoryPage.routeName);
 
-                                                                },
+
+                                                                  },
                                                                   shape: RoundedRectangleBorder(
                                                                     borderRadius: BorderRadius.circular(8)
                                                                   ),
-                                                                  child: Text("Yes"),),
+                                                                  child: Text("Submit"),),
                                                                 SizedBox(width: 9,),
 
-                                                                RaisedButton(onPressed: (){
 
-                                                                },
-                                                                  shape: RoundedRectangleBorder(
-                                                                      borderRadius: BorderRadius.circular(8)
-                                                                  ),
-                                                                  child: Text("No"),)
                                                               ],
                                                             )
 
@@ -150,7 +149,10 @@ class DetailsPage extends StatelessWidget {
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(8.r)
                             ),
-                                child: Text("Complete"),),
+                                child: Text("Complete"),
+                                padding: EdgeInsets.symmetric(horizontal: 0),
+                              ),
+
                               Padding(padding: EdgeInsets.symmetric(horizontal: 6.w)),
                               RaisedButton(onPressed: (){
                                 showDialog(
@@ -219,7 +221,10 @@ class DetailsPage extends StatelessWidget {
                                 shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(8.r)
                                 ),
-                                child: Text("Hold on"),),
+                                child: Text("Hold on"),
+                                padding: EdgeInsets.symmetric(horizontal: 0),
+
+                              ),
                               Padding(padding: EdgeInsets.symmetric(horizontal: 6.w)),
                               RaisedButton(onPressed: (){
 
@@ -230,7 +235,10 @@ class DetailsPage extends StatelessWidget {
                                 shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(8.r)
                                 ),
-                                child: Text("Reject"),)
+                                child: Text("Reject"),
+                                padding: EdgeInsets.symmetric(horizontal: 0),
+
+                              )
                             ],
                           ))
                          
@@ -269,15 +277,20 @@ class DetailsPage extends StatelessWidget {
                     decoration: InputDecoration(
                       border: InputBorder.none,
 
-                  ),
-
-
 
 
                   ),
 
 
+
+
                   ),
+                  
+                  
+
+
+                  ),
+                
 
                   ),
                   ),
